@@ -9,8 +9,7 @@ type CreatorPageProps = {
 };
 
 const CreatorPage = async ({ params }: CreatorPageProps) => {
-    // Destructure username from params
-    const { username } = params;
+    const { username } = params;  // Destructure username from params
 
     // Get the current user and the user by username
     const externalUser = await currentUser();
@@ -30,6 +29,6 @@ const CreatorPage = async ({ params }: CreatorPageProps) => {
             />
         </div>
     );
-}
+};
 
 export default CreatorPage;
